@@ -1,0 +1,23 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {a_cancel = id; a_default = id; a_ok = id; }; 
+            CLASS = Prefs_controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                i_ChannelPressure = id; 
+                i_ModulationWheel = id; 
+                i_NRPNVibrato = id; 
+                i_OverlappedVoice = id; 
+                i_Portamento = id; 
+                i_TraceTextMetaEvent = id; 
+                i_rate = id; 
+                i_stereo = id; 
+                i_voices = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
