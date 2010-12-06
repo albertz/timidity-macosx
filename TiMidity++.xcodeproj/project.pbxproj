@@ -49,7 +49,6 @@
 		29517C1B10D8CB0E00D7C287 /* strtab.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B1B1DA02D7644001A80004 /* strtab.h */; };
 		29517C1C10D8CB0E00D7C287 /* mblock.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B1B1E202D7650401A80004 /* mblock.h */; };
 		29517C1D10D8CB0E00D7C287 /* wrd.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B1B21302D7673101A80004 /* wrd.h */; };
-		29517C1E10D8CB0E00D7C287 /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B1B24C02D76C5301A80004 /* png.h */; };
 		29517C1F10D8CB0E00D7C287 /* sysdep.h in Headers */ = {isa = PBXBuildFile; fileRef = F5883A1B02F2F0B101A80003 /* sysdep.h */; };
 		29517C2010D8CB0E00D7C287 /* optcode.h in Headers */ = {isa = PBXBuildFile; fileRef = F5883A1F02F2F13F01A80003 /* optcode.h */; };
 		29517C2110D8CB0E00D7C287 /* macosx_mag.h in Headers */ = {isa = PBXBuildFile; fileRef = F500F56602F4778E019B56C9 /* macosx_mag.h */; };
@@ -338,18 +337,7 @@
 		F5B1B24502D76BEC01A80004 /* macosx_wrdwindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = macosx_wrdwindow.m; path = interface/macosx_wrdwindow.m; sourceTree = "<group>"; };
 		F5B1B24602D76BEC01A80004 /* macosx_sherry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = macosx_sherry.m; path = interface/macosx_sherry.m; sourceTree = "<group>"; };
 		F5B1B24702D76BEC01A80004 /* macosx_WrdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = macosx_WrdView.m; path = interface/macosx_WrdView.m; sourceTree = "<group>"; };
-		F5B1B24B02D76C5301A80004 /* png.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = png.c; path = "libpng-1.2.1/png.c"; sourceTree = "<group>"; };
-		F5B1B24C02D76C5301A80004 /* png.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = png.h; path = "libpng-1.2.1/png.h"; sourceTree = "<group>"; };
 		F5B1B24F02D7709301A80004 /* macosx_neo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = macosx_neo.m; path = interface/macosx_neo.m; sourceTree = "<group>"; };
-		F5B1B25102D770D201A80004 /* pngread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngread.c; path = "libpng-1.2.1/pngread.c"; sourceTree = "<group>"; };
-		F5B1B25302D770EF01A80004 /* pngerror.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngerror.c; path = "libpng-1.2.1/pngerror.c"; sourceTree = "<group>"; };
-		F5B1B25502D7712401A80004 /* pngrutil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngrutil.c; path = "libpng-1.2.1/pngrutil.c"; sourceTree = "<group>"; };
-		F5B1B25702D7714701A80004 /* pngmem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngmem.c; path = "libpng-1.2.1/pngmem.c"; sourceTree = "<group>"; };
-		F5B1B25802D7714701A80004 /* pngget.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngget.c; path = "libpng-1.2.1/pngget.c"; sourceTree = "<group>"; };
-		F5B1B25B02D7715701A80004 /* pngrtran.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngrtran.c; path = "libpng-1.2.1/pngrtran.c"; sourceTree = "<group>"; };
-		F5B1B25C02D7715701A80004 /* pngrio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngrio.c; path = "libpng-1.2.1/pngrio.c"; sourceTree = "<group>"; };
-		F5B1B25F02D7717401A80004 /* pngtrans.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngtrans.c; path = "libpng-1.2.1/pngtrans.c"; sourceTree = "<group>"; };
-		F5B1B26002D7717401A80004 /* pngset.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pngset.c; path = "libpng-1.2.1/pngset.c"; sourceTree = "<group>"; };
 		F5B1B26302D7726101A80004 /* wrdt_macosx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = wrdt_macosx.m; path = interface/wrdt_macosx.m; sourceTree = "<group>"; };
 		F5B1B26502D772A801A80004 /* VTPrsTbl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = VTPrsTbl.c; path = interface/VTPrsTbl.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -468,24 +456,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F5B1B13102D7535801A80004 /* libpng */ = {
-			isa = PBXGroup;
-			children = (
-				F5B1B24B02D76C5301A80004 /* png.c */,
-				F5B1B24C02D76C5301A80004 /* png.h */,
-				F5B1B25302D770EF01A80004 /* pngerror.c */,
-				F5B1B25702D7714701A80004 /* pngmem.c */,
-				F5B1B25802D7714701A80004 /* pngget.c */,
-				F5B1B25102D770D201A80004 /* pngread.c */,
-				F5B1B25B02D7715701A80004 /* pngrtran.c */,
-				F5B1B25C02D7715701A80004 /* pngrio.c */,
-				F5B1B25502D7712401A80004 /* pngrutil.c */,
-				F5B1B25F02D7717401A80004 /* pngtrans.c */,
-				F5B1B26002D7717401A80004 /* pngset.c */,
-			);
-			name = libpng;
-			sourceTree = "<group>";
-		};
 		F5B1B13302D7538001A80004 /* interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,7 +519,6 @@
 				F5B1B13702D7540301A80004 /* macosx */,
 				F5B1B13302D7538001A80004 /* interface */,
 				F5B1B13602D753FA01A80004 /* timidity */,
-				F5B1B13102D7535801A80004 /* libpng */,
 				F5B1B13402D7538E01A80004 /* libunimod */,
 				F5B1B17D02D75AF701A80004 /* utils */,
 			);
@@ -710,7 +679,6 @@
 				29517C1B10D8CB0E00D7C287 /* strtab.h in Headers */,
 				29517C1C10D8CB0E00D7C287 /* mblock.h in Headers */,
 				29517C1D10D8CB0E00D7C287 /* wrd.h in Headers */,
-				29517C1E10D8CB0E00D7C287 /* png.h in Headers */,
 				29517C1F10D8CB0E00D7C287 /* sysdep.h in Headers */,
 				29517C2010D8CB0E00D7C287 /* optcode.h in Headers */,
 				29517C2110D8CB0E00D7C287 /* macosx_mag.h in Headers */,
