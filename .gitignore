@@ -1,3 +1,4 @@
 *.mode2v3
 *.pbxuser
 build
+xcode.log
