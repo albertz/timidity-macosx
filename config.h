@@ -8,7 +8,7 @@
 /* #undef DEBUG */
 
 /* place to install patches */
-#define DEFAULT_PATH "/usr/local/share/timidity"
+#define DEFAULT_PATH "."
 
 /* Define to 1 if you have to add "_" to every identifiers. */
 /* #undef DLSYM_NEEDS_UNDERSCORE */

@@ -168,9 +168,9 @@ extern float output_volume;
 - (void)core_thread:(id)arg
 {
     NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
-    char *argv[] = {"timidity"};
+    char *argv[] = {"../MacOS/TiMidity++"};
     chdir([[[NSBundle mainBundle] bundlePath] UTF8String]);
-    chdir("..");
+    chdir("Contents/Resources");
     mac_main(1, argv);
 
     [pool release];
