@@ -150,15 +150,22 @@ extern float output_volume;
     [list reloadData];
 }
 
+- (void)__message_unsafe:(NSString *)str {
+	// The following code must be called from the main thread,
+	// otherwise it can cause deadlocks.
+
+	[cmsg replaceCharactersInRange:NSMakeRange([[cmsg string] length], 0)
+						withString:str];
+	[cmsg scrollRangeToVisible:NSMakeRange([[cmsg string] length], 0)];
+}
+
 - (void)message:(const char*)buf
 {
-	return; // TODO: the following code is not multithreading safe and causes deadlocks because it is not executed in the main thread
+	NSString *str = [NSString stringWithCString:buf];
 
-    NSString *str = [NSString stringWithCString:buf];
-    
-    [cmsg replaceCharactersInRange:NSMakeRange([[cmsg string] length], 0)
-                                   withString:str];
-    [cmsg scrollRangeToVisible:NSMakeRange([[cmsg string] length], 0)];
+	[self performSelectorOnMainThread:@selector(__message_unsafe:)
+						   withObject:str
+						waitUntilDone:NO];
 }
 
 - (void)refresh
