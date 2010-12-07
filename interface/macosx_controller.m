@@ -152,6 +152,8 @@ extern float output_volume;
 
 - (void)message:(const char*)buf
 {
+	return; // TODO: the following code is not multithreading safe and causes deadlocks because it is not executed in the main thread
+
     NSString *str = [NSString stringWithCString:buf];
     
     [cmsg replaceCharactersInRange:NSMakeRange([[cmsg string] length], 0)
